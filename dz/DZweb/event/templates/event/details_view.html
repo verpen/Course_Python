@@ -1,0 +1,12 @@
+{% extends 'main/decision.html' %}
+
+{% block title%}{{ article.title }}{% endblock %}
+
+{% block head%}
+    <div class="homes">
+        <h1>{{ cinema.title }}</h1>
+        <p>{{ cinema.abstract }}</p>
+        <p>{{ cinema.full_text }}</p>
+
+    </div>
+{% endblock %}

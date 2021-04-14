@@ -1,0 +1,73 @@
+body {
+    background: turquoise;
+}
+
+aside {
+    float: center;
+    background: #000000;
+    width: 20%;
+    padding: 3%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #2d2d2d;
+}
+
+aside img {
+    width: 300px;
+    margin-left: -54px;
+    position: relative;
+    top: -43px;
+
+}
+
+aside .logo {
+    font-size: 15px;
+    margin-left: 122px;
+    font-weight: bold;
+    position: relative;
+    top: -45px;
+}
+
+aside h1 {
+    margin-top: 50 px;
+    font-size: 25 px;
+}
+
+aside ul { list-style:none}
+
+aside ul li {
+color:#fff;
+display: block;
+margin-top: 20px;
+transition: transform .5s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #F3F315;
+    text-decoration:none;
+    transform: scale(1.05);
+}
+
+main .homes {
+    float: left;
+    margin-top: -750px;
+    text-align: center;
+    width: 110%;
+}
+
+main .homes h1 {font-size: 50px;}
+main .homes p {max-width: 600px; margin: 20px auto;}
+
+.alert-warning {
+float: center;
+clear: both;
+width: 400 px;
+margin: 20px 36%;
+text-align:center;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+    }

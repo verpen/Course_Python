@@ -1,0 +1,34 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <aside>
+<img src="{% static 'main/image/logot.jpg' %}">
+        <span class="logo">Яндекс.Афиша</span>
+
+        <h5>Категории</h5>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Главная</li></a>
+            <a href="{% url 'event_home' %}"><li><i class="fas fa-ticket-alt"></i> Кино</li></a>
+            <a href="{% url 'rating' %}"><li><i class="fas fa-star"></i> Рейтинг</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить фильм</li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block head %}
+        {% endblock %}
+        {% block content %}
+        {%endblock%}
+    </main>
+</body>
+</html>

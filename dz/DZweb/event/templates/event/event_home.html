@@ -1,0 +1,17 @@
+{% extends 'main/decision.html' %}
+
+{% block title%}Афиша.Кино{% endblock %}
+
+{% block head%}
+    <div class="homes">
+        <h1>Киноафиша</h1>
+          {% for el in event%}
+        <div class="alert alert-warning">
+            <h3>{{el.title}}</h3>
+            <p>{{ el.abstract }}</p>
+            <a href="{% url 'event-detail' el.id %}" class="btn btn-warning">Подробнее</a>
+        </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}
